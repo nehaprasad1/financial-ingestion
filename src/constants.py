@@ -5,10 +5,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database Configurations
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
-DB_NAME = "finance_db"
+MONGO_URI = os.getenv("MONGO_URI")
+AV_API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")
+# Fallback check (Professional touch)
+DB_NAME = "financial-ingestion"
 COLLECTION_NAME = "price_history"
-
+if not MONGO_URI:
+    raise ValueError(" MONGO_URI not found! Make sure your .env file is in the root folder.")
 # Ingestion Settings
 DEFAULT_INTERVAL = "1m"
 DEFAULT_PERIOD = "1d"

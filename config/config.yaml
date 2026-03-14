@@ -1,0 +1,9 @@
+assets:
+  - symbol: "NVDA"
+  - symbol: "AAPL"   # Apple
+  - symbol: "MSFT"   # Microsoft
+  - symbol: "GOOGL"  # Google
+  - symbol: "RELIANCE.BSE" # Reliance Industries 
+  - symbol: "IBM"    # IBM
+pipeline_settings:
+  update_interval_seconds: 21600
