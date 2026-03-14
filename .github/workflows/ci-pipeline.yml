@@ -31,6 +31,7 @@ jobs:
         # Link GitHub Secrets to the Environment
         MONGO_URI: ${{ secrets.MONGO_URI }}
         ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
+        PYTHONPATH: .  # <--- ADD THIS LINE
       run: |
-        # We run main.py once and exit (remove the 'while True' loop for CI/CD)
         python src/main.py --once
+     
