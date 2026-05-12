@@ -1,4 +1,4 @@
-[![Financial Ingestion Pipeline](https://github.com/nehaprasad1/financial-ingestion/actions/workflows/ci-pipeline.yml/badge.svg)](https://github.com/nehaprasad1/financial-ingestion/actions/workflows/ci-pipeline.yml)
+
 # Financial Data Pipeline
 
 An automated, cloud-native ETL pipeline designed to ingest, validate, and store real-time stock market data. This project demonstrates a production-ready approach to handling financial time-series data using a modern MLOps stack.
