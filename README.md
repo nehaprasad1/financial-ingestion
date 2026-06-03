@@ -1,6 +1,7 @@
 
 # Financial Data Pipeline
 
+
 An automated, cloud-native ETL pipeline designed to ingest, validate, and store real-time stock market data. This project demonstrates a production-ready approach to handling financial time-series data using a modern MLOps stack.
 
 ## Professional Highlights
@@ -34,3 +35,4 @@ The pipeline is fully automated and deployed via GitHub Actions. It supports:
 2. **Install dependencies:** `pip install -r requirements.txt`
 3. **Environment:** Add `MONGO_URI` and `ALPHA_VANTAGE_API_KEY` to your secrets.
 4. **Execute:** `python src/main.py --once`
+
